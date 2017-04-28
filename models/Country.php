@@ -16,7 +16,7 @@ class Country extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
-    public static function tableName()
+    public static function tableName() //serve in caso abbiamo le app con le diverse tabelle
     {
         return 'country';
     }
@@ -40,9 +40,9 @@ class Country extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'code' => Yii::t('app', 'Code'),
-            'name' => Yii::t('app', 'Name'),
-            'population' => Yii::t('app', 'Population'),
+            'code' => Yii::t('app', 'Codice'),
+            'name' => Yii::t('app', 'Nazione'),
+            'population' => Yii::t('app', 'Popolazione'),
         ];
     }
 }
